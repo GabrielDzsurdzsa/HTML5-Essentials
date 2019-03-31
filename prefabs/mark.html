@@ -1,0 +1,40 @@
+﻿<title>
+    HTML5 Essentials - mark
+</title>
+<style type="text/css">
+    
+    .mark 
+    {                 
+        border: 1px solid #ddd;    
+        box-shadow: none !important;         
+        font-family: Open-Sans, Arial, Helvetica;
+        padding: 6em !important;  
+        background: mark_color;                   
+    }
+    
+    .mark mark 
+    {        
+        background: inherit;        
+        font-size: 40px;
+        font-weight: bold;   
+        word-wrap: none;    
+    }
+    
+    .mark span 
+    {
+        cursor: pointer; 
+        float: right;  
+    }    
+    
+    
+</style>
+<div class="mark">
+    <span>
+        <a onclick="this.parentNode.parentNode.style.display = 'none'">
+            X
+        </a>
+    </span>
+    <mark>
+        mark_text
+    </mark>
+</div>

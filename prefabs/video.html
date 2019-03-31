@@ -1,0 +1,31 @@
+﻿<title>
+    HTML5 Essentials - video
+</title>
+<style type="text/css">
+    
+    .video 
+    {           
+        border: 1px solid #ddd;    
+        box-shadow: none !important;         
+        font-family: Open-Sans, Arial, Helvetica;
+        overflow: hidden;        
+        padding: 6em !important;                  
+    }
+    
+    .video span 
+    {
+        cursor: pointer; 
+        float: right;            
+    }    
+    
+</style>
+<div class="video">
+    <span>
+        <a onclick="this.parentNode.parentNode.style.display = 'none'">
+            X
+        </a>
+    </span>
+    <video width="100%" controls>
+        <source src="video_source"></source>        
+    </video>
+</div>

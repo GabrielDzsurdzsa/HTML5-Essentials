@@ -1,0 +1,66 @@
+﻿<title>
+    HTML5 Essentials - Figure & figcaption
+</title>
+<style type="text/css">
+
+    .figure 
+    {
+        background: white !important;     
+        border: 1px solid #ddd;        
+        border-radius: 0px !important;         
+        box-shadow: none !important; 
+        padding: 6em;  
+        font-family: Open Sans, Arial, Helvetica; 
+        
+    }
+    
+    .figure span 
+    {
+        cursor: pointer; 
+        float: right;            
+    }
+    
+    .figure figure 
+    {
+        background: none;  
+        background-color: white !important; 
+        height: 100%;                        
+        margin: 0 !important;         
+        padding: 0 !important; 
+        width: 100%;         
+    }
+    
+    .figure figure img 
+    {
+        background-size: cover; 
+        height: auto; 
+        margin: 0 !important;    
+        overflow: hidden;         
+        width: 100% !important; 
+    }
+    
+    .figure figure figcaption 
+    {
+        background: lightGray; 
+        border-radius: 0px; 
+        color: White; 
+        font-size: 10px !important;
+        font-family: Open Sans, Arial, Helvetica;
+        padding: 0.5em;                 
+        margin: -10px 0 0 0 !important;         
+    }
+
+</style>
+<div class="figure">
+    <span>
+        <a onclick="this.parentNode.parentNode.style.display = 'none'">
+            X
+        </a>
+    </span>
+    <figure>
+        <img id="img_id" src="img_src" alt="img_text"/>
+        <figcaption>
+            image_caption
+        </figcaption>
+    </figure>
+</div>

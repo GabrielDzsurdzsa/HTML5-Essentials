@@ -1,0 +1,855 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta charset="utf-8" />
+        <!--Style-->
+        <!--<link rel="shortcut icon" href="media/icons/Gabriel_Coder_Icon_124.ico" />-->
+        <link rel="shortcut icon" href="http://www.gabrielcoder.ca/wp-content/uploads/2019/02/Gabriel_Coder_Icon_124.ico" />                
+        <link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada" rel="stylesheet">       
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">     
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="Stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />        
+        <link href="css/accs/styles_accs.css" rel="stylesheet" type="text/css" />        
+        <link href="css/st/styles.css" rel="stylesheet" type="text/css" />        
+        <link href="css/mb/mobile-styles.css" rel="stylesheet" type="text/css" /> 
+        <!--<link href="css/st/themes/crimson.css" rel="stylesheet" type="text/css" />-->          
+        <!--Fallback-->     
+        <!--<link href="css/fallbacks/font_awesome/all.css" rel="stylesheet" type="text/css" />-->
+        <!--<script src="css/fallbacks/font_awesome/faw.js" type="text/javascript"></script>-->
+        <!--JQ-->  
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>        
+        <script src="scripts/js/filesaver/FileSaver.js" type="text/javascript"></script>
+        <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol' async defer></script>              
+        <script src="scripts/jq/progress/progress.js" type="text/javascript"></script>
+        <script src="scripts/jq/mobile/mobile.js" type="text/javascript"></script>
+        <script src="scripts/jq/notification/notification.js" type="text/javascript"></script>
+        <script src="scripts/jq/actions/action_click/click.js" type="text/javascript"></script>
+        <script src="scripts/jq/fx/fx.js" type="text/javascript"></script>
+        <script src="scripts/jq/accordion/accordion.js" type="text/javascript"></script>
+        <script src="scripts/jq/window/windows.js" type="text/javascript"></script>
+        <!--JS-->
+        <script src="scripts/js/storage/sessionStorage.js" type="text/javascript"></script>                
+        <script src="scripts/js/accessibility/access.js" type="text/javascript"></script>
+        <script src="scripts/js/navigate/navigate.js" type="text/javascript"></script>        
+        <script src="scripts/js/builder/builder.js" type="text/javascript"></script>        
+        <script src="scripts/js/bing/bing-map.js" type="text/javascript"></script>
+        <script src="scripts/js/style/style.js" type="text/javascript"></script>  
+        <!--<script src="prefabs/canvas.js" type="text/javascript"></script>-->
+              
+
+        <title>HTML5 Essentials</title>
+    </head>
+    <body>
+
+        <div class="progress">
+            <progress value="0" max="100"></progress>            
+        </div>
+
+        <header>        
+            <h1>
+                <figure>
+                    <a href="http://gabrielcoder.ca" target="_blank"><img src="media/Gabriel_Coder_Logo_300.png" alt="GabrielCoder logo" /></a> HTML5 Essentials
+                </figure> 
+            </h1>
+            <mobile>
+                <button id="mobile"><i class="fas fa-bars"></i></button>
+            </mobile>
+            <nav>
+                <ul id="menu">
+                    <li><a class="menu-item" href="#">article</a></li>
+                    <li><a class="menu-item" href="#">aside</a></li>
+                    <li><a class="menu-item"  href="#">canvas</a></li>
+                    <li><a class="menu-item"  href="#">feedback</a></li>
+                    <li><a class="menu-item"  href="#">figure and figcaption</a></li>
+                    <li><a class="menu-item"  href="#">footer</a></li>
+                    <li><a class="menu-item"  href="#">header</a></li>
+                    <li><a class="menu-item"  href="#">main</a></li>
+                    <li><a class="menu-item"  href="#">mark</a></li>
+                    <li><a class="menu-item"  href="#">meter</a></li>
+                    <li><a class="menu-item"  href="#">nav</a></li>
+                    <li><a class="menu-item"  href="#">progress</a></li>
+                    <li><a class="menu-item"  href="#">section</a></li>
+                    <li><a class="menu-item"  href="#">svg</a></li>
+                    <li><a class="menu-item"  href="#">video</a></li>
+                    <li><a class="menu-item"  href="#">Geolocation API</a></li>
+                    <li><a class="menu-item"  href="#">all</a></li>
+                    <li><a><label for="toggle_css"><i class="fab fa-accessible-icon"></i></label><input type="checkbox" id="toggle_css" name="toggle_css" autocomplete="on" onclick="tg_accs(this)" /></a></li>
+                    <li><a><label for="info"><i class="fas fa-info-circle"></i></label><input type="checkbox" id="info" name="info" autocomplete="on" /></a></li>
+                    <li><a><label for="html_document"><i class="fas fa-file-alt"></i></label><input type="checkbox" id="html_document" name="info" autocomplete="on" /></a></li>
+                    <li><a href="#">A</a></li>                    
+                    <li><a href="#">A</a></li>
+                    <li><a href="#">A</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <notifications>
+            <span><b><i class="fas fa-info"></i>&nbsp;&nbsp;Build, modify & save</b> HTML objects & documents in HTML5 Essentials.&nbsp;&nbsp;<a href="#" id="show_me_how">Show me how</a>&nbsp;&nbsp;<a href="#" id="notifications_dismiss">Dismiss</a></span>                
+        </notifications>
+
+        <main class="main">
+            <section>
+
+                <div>
+                    <article>
+                        <h2><code>article</code></h2>
+                        <p>
+                            The <code><b>article</b></code> tag is a container type tag and can contain a: <b>blog post, news story, forum post, comment etc.</b> 
+                        </p>
+                        <p>
+                            It is typically made up of the following HTML tags:
+                        </p>
+                        <ul>
+                            <li><code><b>h1</b></code> - head title</li>
+                            <li><code><b>span</b></code> - inline text</li>
+                            <li><code><b>p</b></code> - paragraph</li>
+                            <li><code><b>button</b></code> - button</li>
+                        </ul>
+                    </article>
+                    <aside>
+                        <h3>Example:</h3>
+                        <p>
+                            <code>
+                                &lt;article&gt;<br />
+                                &nbsp;&nbsp;&lt;h1&gt;Title&lt;/h1&gt;<br />
+                                &nbsp;&nbsp;&lt;p&gt;Article paragraph text.&lt;/p&gt;<br />
+                                &lt;/article&gt;
+                            </code>
+                        </p>
+                    </aside>
+                    <button>Toggle Example</button>
+                    <button id="toggle_article_settings" class="green"><i class="fas fa-plus"></i>&nbsp;&nbsp;New</button>                                    
+                </div>                
+
+                <div>
+                    <article>
+                        <h2><code>aside</code></h2>
+                        <p>
+                            The <code><b>aside</b></code> tag is a container type tag and can contain: <b>contact info, social and share icons, a profile badge etc.</b> 
+                        </p>
+                        <p>
+                            It is typically made up of the following HTML tags:
+                        </p>
+                        <ul>
+                            <li><code><b>h1</b></code> - head title</li>
+                            <li><code><b>p</b></code> - paragraph</li>
+                            <li><code><b>button</b></code> - button</li>
+                        </ul>
+                    </article>
+                    <aside>
+                        <h3>Example:</h3>
+                        <p>
+                            <code>
+                                &lt;aside&gt;<br />
+                                &nbsp;&nbsp;&lt;h1&gt;Title&lt;/h1&gt;<br />
+                                &nbsp;&nbsp;&lt;p&gt;Contact phone number.&lt;/p&gt;<br />
+                                &nbsp;&nbsp;&lt;p&gt;Contact address.&lt;/p&gt;<br />
+                                &nbsp;&nbsp;&lt;p&gt;Social Links.&lt;/p&gt;<br />
+                                &lt;/aside&gt;
+                            </code>
+                        </p>
+                    </aside>
+                    <button>Toggle Example</button>
+                    <button id="toggle_aside_settings" class="green"><i class="fas fa-plus"></i>&nbsp;&nbsp;New</button>  
+                </div>
+
+                <div>
+                    <article>
+                        <h2><code>canvas</code></h2>
+                        <p>The <code><b>canvas</b></code> tag is <b>used to draw graphics on a page via Javascript</b>. It is also a container type but does not take HTML tags directly. Rather it renders HTML through javascript.</p>                        
+                    </article>
+                    <aside>
+                        <h3>Example</h3>
+                        <code>
+                            &lt;canvas id="myCanvas" width="200" height="50" &gt;<br />
+                            &lt;/canvas&gt;<br /><br />
+                            <canvas id="myCanvas" width="200" height="50"></canvas>
+                            <script>
+                                var c = document.getElementById("myCanvas");
+                                var ctx = c.getContext("2d");
+                                // Create gradient
+                                var grd = ctx.createLinearGradient(0, 0, 200, 0);
+                                grd.addColorStop(0, "red");
+                                grd.addColorStop(1, "white");
+                                // Fill with gradient
+                                ctx.fillStyle = grd;
+                                ctx.fillRect(10, 10, 150, 80);
+                            </script>
+                        </code>
+                    </aside>                                 
+                    <button>Toggle Example</button>
+                    <button id="toggle_canvas_settings" class="green disabled" disabled><i class="fas fa-plus"></i>&nbsp;&nbsp;New</button>      
+                </div>
+
+                <div>
+                    <article>
+                        <h2><code>feedback</code></h2>
+                        <p>The <b>feedback</b> form isn't a <code><b>feedback</b></code> HTML5 tag. It's a <code><b>form</b></code> tag.</p> 
+                        <p>Despite this, it's used so often in HTML documents around the web that it is a HTML5 Essential candidate.</p>                                              
+                    </article>
+                    <aside>
+                        <h3>Example</h3>
+                        <p>For security purposes, this form is user generated. Click Generate to generate feedback form. See <a href="https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/console" target="_blank">console</a> (F12) for details.</p>
+                        <input type="button" value="Generate form" onclick="gen_form(this, 'feedback', 'label,input,label,textarea,input', 'Email,,Message,,', 'emailLbl,email,messageLbl,message,submit', ',email,,text,submit', ',,,,Submit')" />
+                    </aside>                                 
+                    <button>Toggle Example</button>
+                    <button id="toggle_feedback_settings" class="green disabled" disabled><i class="fas fa-plus"></i>&nbsp;&nbsp;New</button>       
+                </div>
+
+                <div>
+                    <article>
+                        <h2><code>figure and figcaption</code></h2>
+                        <p>
+                            The <code><b>figure</b></code> tag is a container type tag and can contain: <b>image, image caption, SVG graphics, canvas graphics.</b>                             
+                        </p>
+                        <p>
+                            It is typically made up of the following HTML tags:
+                        </p>
+                        <ul>
+                            <li><code><b>img</b></code> - image</li>
+                            <li><code><b>canvas</b></code> - canvas graphics</li>
+                            <li><code><b>svg</b></code> - SVG graphics</li>
+                            <li><code><b>figcaption</b></code> - caption</li>
+                        </ul>
+                    </article>
+                    <aside>
+                        <h3>Example:</h3>
+                        <p>
+                            <code>
+                                &lt;figure&gt;<br />                            
+                                &nbsp;&nbsp;&lt;img src=""&gt;&lt;/img&gt;<br />
+                                &nbsp;&nbsp;&lt;figcaption&gt;Image caption.&lt;/figcaption&gt;<br />
+                                &lt;/figure&gt;
+                            </code>
+                        </p>
+                        <figure>
+                            <img src="media/Gabriel_Coder_Logo_300.png" alt="GabrielCoder logo" />
+                            <figcaption>
+                                Gabrielcoder.ca
+                            </figcaption>
+                        </figure>
+                    </aside> 
+                    <button>Toggle Example</button>
+                    <button class="green" id="toggle_figfigcaption_settings"><i class="fas fa-plus"></i>&nbsp;&nbsp;New</button>  
+                </div>
+
+                <div>
+                    <article>
+                        <h2><code>footer</code></h2>
+                        <p>
+                            The <code><b>footer</b></code> tag is a container type tag and can contain: <b>reference links, subscription links, share & social media buttons, a navigation menu, copyright & other information etc.</b>                             
+                        </p>
+                        <p>
+                            It is typically made up of the following HTML tags:                                             
+                        </p>
+                        <ul>
+                            <li><code><b>a</b></code> - link</li> 
+                            <li><code><b>ul</b></code> - list</li>
+                            <li><code><b>button</b></code> - button</li>
+                            <li><code><b>span</b></code> - inline text</li>
+                        </ul>
+                    </article>
+                    <aside>
+                        <h3>Example:</h3>
+                        <p>
+                            <code>
+                                &lt;footer&gt;<br />
+                                &nbsp;&nbsp;&lt;span&gt;Meta.&lt;/span&gt;<br />
+                                &nbsp;&nbsp;&lt;span&gt;Subscription link.&lt;/span&gt;<br />
+                                &nbsp;&nbsp;&lt;span&gt;Social Links.&lt;/span&gt;<br />
+                                &lt;/footer&gt;
+                            </code>
+                        </p>
+                    </aside>
+                    <button>Toggle Example</button>
+                    <button class="green" id="toggle_footer_settings"><i class="fas fa-plus"></i>&nbsp;&nbsp;New</button>  
+                </div>
+
+                <div>
+                    <article>
+                        <h2><code>Geolocation API</code></h2>
+                        <p>The HTML5 Geolocation API is typically used to discover the user's coordinates.</p>                        
+                    </article>
+                    <aside>
+                        <h3>Example</h3>    
+                        <p>Due to privacy restrictions, this action should only be triggered by the user.</p>                    
+                        <p>                            
+                            <input type="button" value="Geolocate" onclick="getLocation()" />
+                        </p>
+                    </aside>                    
+                    <button>Toggle Example</button>
+                    <button class="green disabled" id="add_geolocate" disabled><i class="fas fa-plus"></i>&nbsp;&nbsp;New</button>  
+                </div>    
+
+                <div>
+                    <article>
+                        <h2><code>header</code></h2>
+                        <p>
+                            The <code><b>header</b></code> tag is a container type tag and can contain: <b>a logo, a website title, share & social media icons, search, navigation etc.</b> 
+                        </p>
+                        <p>
+                            It is typically made up of the following HTML tags:                      
+                        </p>
+                        <ul>
+                            <li><code><b>img</b></code> - logo image</li> 
+                            <li><code><b>h1</b></code> - website title</li>
+                            <li><code><b>button</b></code> - button</li>
+                            <li><code><b>input</b></code> - text input for search</li>                            
+                            <li><code><b>nav</b></code> - navigation</li>
+                        </ul>
+                    </article>
+                    <aside>
+                        <h3>Example:</h3>
+                        <p>
+                            <code>
+                                &lt;header&gt;<br />
+                                &nbsp;&nbsp;&lt;h1&gt;<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;figure&gt;<br />
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="" alt="Site Logo" /&gt; Site Title<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/figure&gt;<br />
+                                &nbsp;&nbsp;&lt;/h1&gt;<br />
+                                &nbsp;&nbsp;&lt;nav&gt;<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Link 1&lt;/a&gt;<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Link 2&lt;/a&gt;<br />           
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Link 3&lt;/a&gt;<br />                            
+                                &nbsp;&nbsp;&lt;/nav&gt;<br />
+                                &lt;/header&gt;
+                            </code>
+                        </p>
+                    </aside>
+                    <button>Toggle Example</button>
+                    <button id="toggle_header_settings" class="green"><i class="fas fa-plus"></i>&nbsp;&nbsp;New</button>  
+                </div>
+
+                <div>
+                    <article>
+                        <h2><code>main</code></h2>
+                        <p>
+                            The <code><b>main</b></code> tag is a container type tag and can contain: <b>all html content that is not of a header, footer and navigation type.</b> 
+                        </p>
+                        <p>
+                            It is typically made up of the following HTML tags:                     
+                        </p>
+                        <ul>
+                            <li><code><b>section</b></code> - section</li> 
+                            <li><code><b>div</b></code> - division</li>
+                            <li><code><b>button</b></code> - button</li>
+                            <li><code><b>ul</b></code> - un-ordered list</li>
+                            <li><code><b>aside</b></code> - aside</li>
+                            <li><code><b>mark</b></code> - highlight text</li>
+                        </ul>
+                    </article>
+                    <aside>
+                        <h3>Example:</h3>
+                        <p>
+                            <code>
+                                &lt;main&gt;<br />
+                                &nbsp;&nbsp;&lt;section&gt;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&lt;article&gt;Article contents.&lt;/article&gt;<br />
+                                &nbsp;&nbsp;&lt;/section&gt;<br />
+                                &lt;/main&gt;
+                            </code>
+                        </p>
+                    </aside>
+                    <button>Toggle Example</button>
+                    <button id="toggle_main_settings" class="green disabled" disabled><i class="fas fa-plus"></i>&nbsp;&nbsp;New</button>  
+                </div>
+            
+                <div>
+                    <article>
+                        <h2><code>mark</code></h2>
+                        <p>
+                            The <mark><code><b>mark</b></code></mark> tag can contain: <b>text of any size that needs to be highlighted</b> 
+                        </p>
+                        <p>
+                            It is typically made up of the following HTML tags:
+                        </p>
+                        <ul>
+                            <li>plain text</li>
+                        </ul>
+                    </article>
+                    <aside>
+                        <h3>Example:</h3>
+                        <p>
+                            <code>
+                                &lt;mark&gt;<br />
+                                    &nbsp;&nbsp;Text to be highlighted<br />
+                                &lt;/mark&gt;
+                            </code>
+                        </p>
+                    </aside>
+                    <button>Toggle Example</button>
+                    <button id="toggle_mark_settings" class="green"><i class="fas fa-plus"></i>&nbsp;&nbsp;New</button>  
+                </div>
+
+                <div>
+                    <article>
+                        <h2><code>meter</code></h2>
+                        <p>
+                            The <code><b>meter</b></code> tag can contain: <b>a metered gauge that shows either a percentage or number</b> and would normally render as follows:
+                        </p>
+                        <ul>
+                            <li><meter value="0.6"></meter> 60% - Disk usage</li>
+                            <li><meter value="2" min="0" max="10"></meter> 2 out of 10 - Query results</li>
+                        </ul>
+                    </article>
+                    <aside>
+                        <h3>Example:</h3>
+                        <p>
+                            <code>
+                                &lt;meter value="0.6"&gt;<br />                            
+                                &lt;/meter&gt;<br />
+                                &lt;meter value="2" min="0" max="10"&gt;<br />                            
+                                &lt;/meter&gt;                         
+                            </code>
+                        </p>
+                    </aside>
+                    <button>Toggle Example</button>
+                    <button class="green" id="toggle_meter_settings"><i class="fas fa-plus"></i>&nbsp;&nbsp;New</button>  
+                </div>
+
+                <div>
+                    <article>
+                        <h2><code>nav</code></h2>
+                        <p>
+                            The <code><b>nav</b></code> tag is a container type tag that can contain: <b>a navigation menu.</b>                     
+                        </p>
+                        <p>
+                            It is typically made up of the following HTML tags:
+                        </p>
+                        <ul>
+                            <li><code><b>a</b></code> - link</li>
+                            <li><code><b>ul</b></code> - list</li>
+                        </ul>
+                    </article>
+                    <aside>
+                        <h3>Example:</h3>
+                        <p>
+                            <code>
+                                &lt;nav&gt;<br />
+                                    &nbsp;&nbsp;&lt;a href="#"&gt;Link 1&lt;/a&gt;<br />
+                                    &nbsp;&nbsp;&lt;a href="#"&gt;Link 2&lt;/a&gt;<br />           
+                                    &nbsp;&nbsp;&lt;a href="#"&gt;Link 3&lt;/a&gt;<br />                            
+                                &lt;/nav&gt;<br />
+                            </code>
+                        </p>
+                    </aside>
+                    <button>Toggle Example</button>
+                    <button class="green" id="toggle_nav_settings"><i class="fas fa-plus"></i>&nbsp;&nbsp;New</button>  
+                </div>
+
+                <div>
+                    <article>
+                        <h2><code>progress</code></h2>
+                        <p>
+                            The <code><b>progress</b></code> tag can contain: <b>a progress bar</b> and would normally render as follows:                     
+                        </p>
+                        <ul>
+                            <li><progress value="22" max="100"></progress> - 22% Download progress</li>
+                        </ul>
+                    </article>
+                    <aside>
+                        <h3>Example:</h3>
+                        <p>
+                            <code>
+                                &lt;progress value="22" max="100"&gt;<br />                          
+                                &lt;/progress&gt;
+                            </code>
+                        </p>
+                    </aside>
+                    <button>Toggle Example</button>
+                    <button class="green" id="toggle_progress_settings"><i class="fas fa-plus"></i>&nbsp;&nbsp;New</button>  
+                </div>
+
+                <div>
+                    <article>
+                        <h2><code>section</code></h2>
+                        <p>
+                            The <code><b>section</b></code> tag is a container type tag and can contain: <b>articles, images, videos, menus, other media etc.</b>                     
+                        </p>
+                        <p>
+                            It is typically made up of the following HTML tags:
+                        </p>
+                        <ul>
+                            <li><code><b>article</b></code> - article</li>
+                            <li><code><b>aside</b></code> - aside</li>
+                            <li><code><b>div</b></code> - division</li>
+                            <li><code><b>img</b></code> - image</li>
+                            <li><code><b>ul</b></code> - un-ordered list</li>
+                        </ul>
+                    </article>
+                    <aside>
+                        <h3>Example:</h3>
+                        <p>
+                            <code>
+                                &lt;section&gt;<br />
+                                &nbsp;&nbsp;&lt;h2&gt;Section headline&lt;/h2&gt;<br />
+                                &nbsp;&nbsp;&lt;p&gt;Section paragraph.&lt;/h2&gt;<br />
+                                &lt;/section&gt;
+                            </code>
+                        </p>
+                    </aside>
+                    <button>Toggle Example</button>
+                    <button class="green" id="toggle_section_settings"><i class="fas fa-plus"></i>&nbsp;&nbsp;New</button>  
+                </div>
+
+                <div>
+                    <article>
+                        <h2><code>svg</code></h2>
+                        <p>
+                            <code><b>svg</b></code> or Scalable Vector Graphics is a w3c recommended open source standard, a container type tag and can contain: <b>any svg style html element e.g. rect</b>                     
+                        </p>
+                        <p>
+                           It is typically made up of the following HTML tags: 
+                        </p>
+                        <ul>
+                            <li><code><b>rect</b></code> - rectangle</li>
+                            <li><code><b>circle</b></code> - circle</li>
+                            <li><code><b>line</b></code> - line</li>
+                            <li><code><b>polyline</b></code> - polyline</li>
+                            <li><code><b>path</b></code> - line path</li>
+                        </ul>
+                    </article>
+                    <aside>
+                        <h3>Example:</h3>
+                        <p>
+                            <code>
+                                &lt;svg width="100" height="100"&gt;<br />
+                                &nbsp;&nbsp;&lt;rect x="50" y="50" width="150px" height="50px" stroke="lightBlue" stroke-width="10" fill="lightGray" &gt;&lt;rect/&gt;<br />                                
+                                &lt;/svg&gt;
+                            </code><br />
+                            <svg width="120" height="100">
+                              <rect x="10" y="30" width="100px" height="50px" stroke="lightBlue" stroke-width="10" fill="lightGray"></rect>
+                            </svg>
+                        </p>
+                    </aside>
+                    <button>Toggle Example</button>
+                    <button class="green disabled" id="toggle_svg_settings" disabled><i class="fas fa-plus"></i>&nbsp;&nbsp;New</button>  
+                </div>
+
+                <div>                
+                    <article>
+                        <h2><code>video</code></h2>
+                        <p>
+                            The <code><b>video</b></code> tag allows the embedding of .mp4 and .ogg format videos:                     
+                        </p>
+                    </article>
+                    <aside>
+                        <h3>Example:</h3>
+                        <p>
+                            <code>
+                                &lt;video width="100%" controls&gt;<br />
+                                &nbsp;&nbsp;&lt;source src="mov_bbb.mp4"&gt;&lt;source/&gt;<br />                                
+                                &nbsp;&nbsp;&lt;source src="mov_bbb.ogg"&gt;&lt;source/&gt;<br />                                
+                                &lt;/video&gt;
+                            </code><br /><br />
+                            <video width="100%" controls>
+                              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                              <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+                              Your browser does not support HTML5 video.
+                            </video>
+                        </p>
+                    </aside>
+                    <button>Toggle Example</button>
+                    <button id="toggle_video_settings" class="green"><i class="fas fa-plus"></i>&nbsp;&nbsp;New</button>  
+                </div>           
+
+                <div>
+                    <article>
+                        <h2><code>Looking for more?</code></h2>
+                        <p>
+                            More HTML5 goodness coming soon...
+                        </p>                    
+                    </article>
+                </div>
+
+            </section>
+
+            <div id="info-dialog" title="HTML5 Essentials KB" class="modal">
+              <div id="info-accordion" class="accordion">
+                <h3>What is HTML5 Essentials?</h3>
+                <div>
+                    <p>HTML5 Essentials is a form based HTML document builder.</p>
+                    <p>Completely client side, compact and responsive, HTML5 Essentials is designed for the beginner web developer.</p>
+                    <p>It can also be used as a teaching tool demonstrating the latest HTML technologies.</p>
+                </div>
+                <h3>The HTML Document</h3>
+                <div>
+                    <p>HTML5 Essentials creates complete HTML markup that can be saved as a hostable .html document.</p>
+                    <p>View and download your .html document from the <a href="#" id="document_menu">document menu</a>.</p>
+                </div>
+                <h3>HTML5 Tags</h3>
+                <div>
+                    <p>HTML5 Essentials simplifies adding HTML5 tags to an HTML document by populating tag proprieties and then rendering the tag in a container.</p>
+                    <p>There are many HTML and HTML5 tags to consider. HTML5 Essentials focuses only on the most essential, up to date and relevant ones.</p>
+                </div>
+                <h3>How can I add a new tag too my HTML Document?</h3>
+                <div>
+                    <ol>
+                        <li>Click on + New button belonging to desired HTML tag</li>
+                        <li>Fill out the form fields</li>
+                        <li>Click on Add to HTML in the window</li>
+                        <li>Go to your <a href="#" id="document_menu2">document menu</a>.</li>
+                    </ol>
+                </div>
+                <h3>How can I start a new HTML document?</h3>
+                <div>
+                    <p>You can just close the browser window and re-launch the app.</p>
+                </div>
+                <h3>Privacy</h3>
+                <div>
+                    <p>We do not store or share your information. HTML5 Essentials is a client-side only, standalone application. It does not connect to any databases for storage.</p>
+                    <p>All data is stored in your local browser session only, no cookies.</p>
+                </div>
+              </div>
+            </div>
+            <div id="map" title="Bing Maps & Geolocate" class="modal">
+                <div id="bing"></div>
+                <p>This is a basic example of chained HTML5 Geolocate and Bing Maps API.</p>
+                <p>For security purposes, we won't show a tag on the map with the exact location. Instead, we're returning the general area where you're located within 100 meters.</p>
+            </div>
+
+            <div id="article_modal" title="New Article Element" class="modal">
+                <p>Add an <code>article</code> element to your HTML document.</p>
+                <form id="add_new_article">
+                    <fieldset>
+                        <label for="image">Image</label>
+                        <input id="article_image" type="file" />
+                        <label for="article_title">Title</label>
+                        <input id="article_title" type="text" class="text ui-widget-content ui-corner-all" required/>                        
+                        <label for="article_text">Text</label>                        
+                        <textarea id="article_text" class="text ui-widget-content ui-corner-all" required></textarea>
+                        <label for="article_link">Link</label>
+                        <input id="article_link" type="text" class="text ui-widget-content ui-corner-all" required/>
+                        <input type="submit" value="Add to HTML"  onclick="add_to_html(this)" />
+                    </fieldset>
+                </form>                
+            </div>  
+
+            <div id="aside_modal" title="New Aside Element" class="modal">
+                <p>Add an <code>aside</code> element to your HTML document.</p>
+                <form id="add_new_aside">
+                    <fieldset>
+                        <label for="aside_title">Title</label>
+                        <input id="aside_title" type="text" class="text ui-widget-content ui-corner-all" required/>                        
+                        <label for="aside_text">Text</label>                        
+                        <textarea id="aside_text" class="text ui-widget-content ui-corner-all" required></textarea>
+                        <input type="submit" value="Add to HTML" onclick="add_to_html(this)" />
+                    </fieldset>
+                </form>                
+            </div> 
+
+            <div id="canvas_modal" title="New Canvas Element" class="modal">
+                <p>Add a <code>canvas</code> element to your HTML document.</p>
+                <form id="add_new_canvas">
+                    <fieldset>
+                        <!--<label for="canvas_id">Canvas ID</label>-->
+                        <!--<input id="canvas_id" type="text" class="text ui-widget-content ui-corner-all" placeholder="Enter a unique id for the canvas element, e.g. canvas_1" />-->                        
+                        <label for="canvas_width">Canvas Width</label>                        
+                        <input id="canvas_width" type="number" max="400" class="text ui-widget-content ui-corner-all" required/>
+                        <label for="canvas_height">Canvas Height</label>                        
+                        <input id="canvas_height" type="number" max="400" class="text ui-widget-content ui-corner-all" required/>
+                        <label for="canvas_draw_type">Drawing</label>
+                        <select id="canvas_draw_type">
+                            <option value="canvas_line" selected>Line</option>
+                            <option value="canvas_circle">Circle</option>
+                            <!--<option value="canvas_text">Text</option>-->
+                            <option value="canvas_linearG">Linear Gradient</option>
+                            <option value="canvas_circularG">Circular Gradient</option>
+                            <!--<option value="canvas_image">Image</option>-->                            
+                        </select> 
+                        <input type="submit" value="Add to HTML" onclick="add_to_html(this)" />
+                    </fieldset>
+                </form>                
+            </div>
+
+            <div id="feedback_modal" title="New Feedback Form" class="modal">
+                <p>Although the <code>feedback</code> form is not a HTML element per say, it's still a data collection staple in most websites. And there are creative ways to generate feedback forms that collect: reviews, ratings and verbal feedback from users.</p>
+                <form id="add_new_feedback">
+                    <fieldset>
+                        <label for="feedback_form_type">
+                            <select>
+                                <option selected>Star Rating</option>
+                                <option selected>Standard Feedback</option>
+                            </select>
+                        </label>
+<!--                        <label for="feedback_form_email">Email</label>
+                        <input type="text" id="feedback_form_email" class="text ui-widget-content ui-corner-all" />
+                        <label for="feedback_form_message">Message</label>
+                        <input type="text" id="feedback_form_message" class="text ui-widget-content ui-corner-all" />-->
+                        <input type="submit" value="Add to HTML" onclick="add_to_html(this)" />
+                    </fieldset>
+                </form>
+            </div>
+
+            <div id="figfigcaption_modal" title="New Figure & FigCaption Form" class="modal">
+                <p>Add a <code>figure</code>, an <code>img</code> tag and <code>figcaption</code> to your HTML document.</p>
+                <form id="add_new_figfigcaption">
+                    <fieldset>
+                        <label for="figfigcaption_image_location">Image file</label>
+                        <input type="file" id="figfigcaption_image" required/>
+                        <label for="figfigcaption_text">Text</label>
+                        <input type="text" id="figfigcaption_text" required/>
+                        <input type="submit" value="Add to HTML" onclick="add_to_html(this)" />
+                    </fieldset>
+                </form>
+            </div>
+
+            <div id="footer_modal" title="New Footer Form" class="modal">
+                <p>Add a <code>footer</code> to your HTML document.</p>
+                <form id="add_new_footer">
+                    <fieldset>
+                        <label for="footer_link">Link</label>
+                        <input type="text" id="footer_link" required/>
+                        <label for="footer_link_text">Link Text</label>
+                        <input type="text" id="link_text" required/>
+                        <label for="footer_text">Footer Text</label>
+                        <input type="text" id="footer_text" required/>
+                        <input type="submit" value="Add to HTML" onclick="add_to_html(this)" />
+                    </fieldset>
+                </form>
+            </div>
+
+            <div id="header_modal" title="New Header Form" class="modal">
+                <p>In the <code>header</code> we're going to add a Title and a site logo to your HTML document. Add <code>nav</code> later</p>
+                <form id="add_new_header">
+                    <fieldset>
+                        <label for="header_image">Site Logo</label>
+                        <input type="file" id="header_image" required/>
+                        <label for="header_site_title">Site Title</label>
+                        <input type="text" id="header_site_title" required/>
+                        <input type="submit" value="Add to HTML" onclick="add_to_html(this)" />
+                    </fieldset>
+                </form>
+            </div>
+
+            <div id="main_modal" title="New Main Form" class="modal">
+                <p>The <code>main</code> element will wrap around the <code>section</code> and <code>article</code> tag in case you've already added those tags. Otherwise, it will create an empty <code>main</code> container.</p>
+                <form id="add_new_main">
+                    <fieldset>
+                        <label for="main_text">Text</label>
+                        <textarea id="main_text" class="disabled" disabled></textarea>
+                        <input type="submit" value="Add to HTML" onclick="add_to_html(this)" />
+                    </fieldset>
+                </form>
+            </div>
+
+            <div id="mark_modal" title="New Mark Form" class="modal">
+                <p>With the <code>mark</code> element we're going to add some text that will be displayed highlighted with a certain color.</p>
+                <form id="add_new_mark">
+                    <fieldset>
+                        <label for="mark_color">Highlight Color</label>
+                        <input type="color" id="mark_color" required/>
+                        <label for="mark_text">Highlighted Text</label>
+                        <input type="text" id="mark_text" required/>
+                        <input type="submit" value="Add to HTML" onclick="add_to_html(this)" />
+                    </fieldset>
+                </form>
+            </div>
+
+            <div id="meter_modal" title="New Meter Form" class="modal">
+                <p>With the <code>meter</code> element we're going to add a colored meter gauge.</p>
+                <form id="add_new_meter">
+                    <fieldset>
+                        <label for="meter_color">Meter Color</label>
+                        <input type="color" id="meter_color" required/>
+                        <label for="meter_value">Percentage</label>
+                        <input type="number" id="meter_value" required/>
+                        <input type="submit" value="Add to HTML" onclick="add_to_html(this)" />
+                    </fieldset>
+                </form>
+            </div>
+
+            <div id="nav_modal" title="New Nav Form" class="modal">
+                <p>With the <code>nav</code> element we're going to add a 3 item navigation menu to the HTML document header.</p>
+                <form id="add_new_nav">
+                    <fieldset>
+                        <label for="link1">Link1</label>
+                        <input type="text" id="link1" required/>
+                        <label for="link1_text">Link1 Text</label>
+                        <input type="text" id="link1_text" required/>
+                        <label for="link2">Link2</label>
+                        <input type="text" id="link2" required/>
+                        <label for="link2_text">Link2 Text</label>
+                        <input type="text" id="link2_text" required/>
+                        <label for="link3">Link3</label>
+                        <input type="text" id="link3" required/>
+                        <label for="link3_text">Link3 Text</label>
+                        <input type="text" id="link3_text" required/>
+                        <input type="submit" value="Add to HTML" onclick="add_to_html(this)" />
+                    </fieldset>
+                </form>
+            </div>
+
+            <div id="progress_modal" title="New progress Form" class="modal">
+                <p>With the <code>progress</code> element we're going to add a colored progress bar to your HTML document. You just need to choose the color. NOTE: The progress bar is added to your document and will display on postback.</p>
+                <form id="add_new_progress">
+                    <fieldset>
+                        <label for="progress_color">Progress Bar Color</label>
+                        <input type="color" id="progress_color" required/>
+                        <input type="submit" value="Add to HTML" onclick="add_to_html(this)" />
+                    </fieldset>
+                </form>
+            </div>
+
+            <div id="section_modal" title="New Section Form" class="modal">
+                <p>Add a <code>section</code> element to your HTML document.</p>
+                <form id="add_new_section">
+                    <fieldset>
+                        <label for="section_headline">Section Headline</label>
+                        <input type="text" id="section_headline" required/>
+                        <label for="section_text">Section Text</label>
+                        <input type="text" id="section_text" required/>
+                        <input type="submit" value="Add to HTML" onclick="add_to_html(this)" />
+                    </fieldset>
+                </form>
+            </div>
+
+            <div id="svg_modal" title="New SVG Form" class="modal">
+                <p>Add a <code>svg</code> element to your HTML document.</p>
+                <form id="add-new_svg">
+                    <fieldset>
+                        <label for="svg_graphic">Common SVG Graphics</label>
+                        <select id="svg_graphic">
+                            <option selected>SVG Logo</option>
+                            <option>Rectangle</option>
+                            <option>Circle</option>
+                            <option>Ellipse</option>
+                            <option>Line</option>
+                        </select>
+                        <input type="submit" value="Add to HTML" />
+                    </fieldset>
+                </form>
+            </div>
+
+            <div id="video_modal" title="New video Form" class="modal">
+                <p>Add a <code>svg</code> element to your HTML document.</p>
+                <form id="add_new_video">
+                    <fieldset>
+                        <label for="video_source">Video Link (.mp4)</label>
+                        <input type="text" id="video_source" required/>
+                        <input type="submit" value="Add to HTML" onclick="add_to_html(this)" /> 
+                    </fieldset>
+                </form>
+            </div>
+
+            <div id="your_document_dialog" title="Your HTML Document" class="modal">
+                <p>Your HTML document below is set to automatically render the HTML5 elements that you create in the right order.</p>                
+                <div id="HTML_placeholder">
+                    <div id="placeholder_header"></div>
+                    <div id="placeholder_main"><div id="placeholder_section"></div></div>
+                    <div id="placeholder_footer"></div>
+                </div>                
+            </div>
+
+        </main>
+
+        <footer>
+            Distributed freely under <a href="https://opensource.org/licenses/GPL-3.0" target="_blank">GNU License</a>. <a href="http://gabrielcoder.ca" target="_blank">GabrielCoder.ca</a>
+        </footer>
+        
+    </body>
+</html>

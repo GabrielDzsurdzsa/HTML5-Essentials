@@ -1,0 +1,24 @@
+﻿/*Custom order
+Do not modify
+*/
+body 
+{
+    font-size: 200%;
+}
+
+button
+{
+    display: none;    
+}
+
+h1 figure 
+{
+    display: block;
+    margin-left: 0;
+}
+
+h1 figure img 
+{
+    display: none;    
+}
+

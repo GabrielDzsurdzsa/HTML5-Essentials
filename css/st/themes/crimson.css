@@ -1,0 +1,32 @@
+﻿header h1, figure, nav a   {
+    background: crimson !important;
+}
+
+nav, nav div a, nav a:hover 
+{
+    background: #ffb8d1 !important;    
+}
+
+notifications 
+{
+    background: #fff2f6 !important;    
+}
+
+i, code 
+{
+    color: crimson;        
+}
+
+button {    
+    border: 1px solid crimson;    
+    color: crimson;    
+}
+
+button:hover {
+    background: crimson;    
+    color: white;
+}
+
+form input[type='submit'] {
+    background-color: crimson;
+}

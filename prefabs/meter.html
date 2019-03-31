@@ -1,0 +1,36 @@
+﻿<title>
+    HTML5 Essentials - meter
+</title>
+<style type="text/css">
+    
+    .meter 
+    {                 
+        border: 1px solid #ddd;    
+        box-shadow: none !important;         
+        font-family: Open-Sans, Arial, Helvetica;
+        overflow: hidden;        
+        padding: 6em !important;
+    }
+    
+    .meter meter::-webkit-meter-optimum-value 
+    {        
+        background: meter_color;             
+    }
+    
+    .meter span 
+    {
+        cursor: pointer; 
+        float: right;  
+    }    
+    
+    
+</style>
+<div class="meter">
+    <span>&nbsp;&nbsp;
+        <a onclick="this.parentNode.parentNode.style.display = 'none'">
+            X
+        </a>
+    </span>
+    <meter value="meter_value">              
+    </meter>&nbsp;meter_value_text
+</div>

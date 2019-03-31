@@ -1,0 +1,105 @@
+﻿<title>
+    HTML5 Essentials - article
+</title>
+<style type="text/css">
+    
+    .article 
+    {
+        background: white; 
+        border: 1px solid #ddd;    
+        box-shadow: none !important;         
+        font-family: Open-Sans, Arial, Helvetica;
+        overflow: hidden;
+    }
+
+    .article article 
+    {        
+        height: 100%;  
+        padding: 6em;         
+        word-wrap: break-all;         
+    }
+
+    .article article span 
+    {
+        cursor: pointer; 
+        float: right;  
+    }
+
+    .article article figure 
+    {    
+        background-color: white !important;     
+        display: block !important; 
+        margin: 0 !important;     
+        padding: 0 !important;    
+    }
+
+    .article article figure img 
+    {
+        background-size: cover; 
+        height: auto; 
+        margin: 0 !important;   
+        overflow: hidden; 
+        width: 100% !important; 
+    }
+
+    .article article figure figcaption 
+    {
+        background: lightGray; 
+        border-radius: 0px; 
+        color: White; 
+        font-size: 10px !important;    
+        margin: -10px 0 0 0 !important; 
+        padding: 0.5em;   
+        font-family: Open-Sans, Arial, Helvetica;   
+    }
+
+    .article article p 
+    {
+        margin-bottom: 50px;    
+        padding: 20px 0 0 0 !important;     
+    }
+
+    .article article a:nth-child(1) 
+    {
+        background: none;
+        border: 0;
+        color: Black; 
+        padding: 0;         
+    }
+
+    .article article a 
+    {
+        background: #2780e3; 
+        border: 0; 
+        color: #fff; 
+        cursor: pointer; 
+        margin-left: 0px; 
+        padding: 1em 2em;     
+        text-decoration: none;    
+    }
+    
+</style>
+<div class="article">
+    <article>
+        <span>
+            <a onclick="this.parentNode.parentNode.parentNode.style.display = 'none'">
+                X
+            </a>
+        </span>
+        <h1>
+            article_title
+        </h1>        
+        <figure>
+            <img src="img_src" alt="img_src"/>            
+            <figcaption>
+                image_caption
+            </figcaption>
+        </figure>
+        <p>
+            article_text
+        </p>
+        <a href="article_link" target="_blank">
+            View
+        </a>
+    </article>
+</div>

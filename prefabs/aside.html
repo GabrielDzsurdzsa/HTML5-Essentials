@@ -1,0 +1,48 @@
+﻿<title>
+    HTML5 Essentials - aside
+</title>
+<style type="text/css">
+    
+    .aside 
+    {
+        background: white; 
+        border: 1px solid #ddd;
+        box-shadow: none !important;         
+        font-family: Open-Sans, Arial, Helvetica !important;      
+        overflow: hidden;   
+    }
+    
+    .aside aside 
+    {        
+        background: ivory;         
+        height: 100%;    
+        margin-bottom: 0 !important; 
+        overflow: hidden; 
+        padding: 6em; 
+        word-wrap: break-all; 
+        display: block !important;
+        overflow: hidden;
+    }
+    
+    .aside span 
+    {
+        cursor: pointer; 
+        float: right;    
+    }
+    
+</style>
+<div class="aside">
+    <aside>
+        <span>
+            <a onclick="this.parentNode.parentNode.parentNode.style.display = 'none'">
+                X
+            </a>
+        </span>
+        <h3>
+            aside_title
+        </h3>
+        <p>
+            aside_text
+        </p>
+    </aside>
+</div>

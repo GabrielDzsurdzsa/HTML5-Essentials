@@ -1,0 +1,29 @@
+﻿<title>
+    HTML5 Essentials - progress
+</title>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script> 
+<style type="text/css">
+    
+    .progress 
+    {   
+        overflow: hidden;                
+    }
+    
+    .progress progress
+    {        
+        background: progress_color; 
+        padding: 0;
+        margin: 0;        
+        /*animation: fill 1s;*/ 
+        height: 5px; 
+        border: 0;                    
+    }
+    
+</style>
+<script>
+    $("#progress_prefab").fadeOut("slow");
+</script>
+<div id="progress_prefab" class="progress">
+    <progress value="0" max="100"></progress>
+</div>

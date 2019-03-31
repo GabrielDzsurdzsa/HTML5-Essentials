@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "HTML5 Essentials", ".", "{B9EDA3F1-34AF-408D-BFCB-87C13B813126}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/HTML5 Essentials"
+		Debug.AspNetCompiler.PhysicalPath = "..\HTML5 Essentials\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\HTML5 Essentials\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/HTML5 Essentials"
+		Release.AspNetCompiler.PhysicalPath = "..\HTML5 Essentials\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\HTML5 Essentials\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "22107"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		View|Any CPU = View|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9EDA3F1-34AF-408D-BFCB-87C13B813126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9EDA3F1-34AF-408D-BFCB-87C13B813126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9EDA3F1-34AF-408D-BFCB-87C13B813126}.View|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9EDA3F1-34AF-408D-BFCB-87C13B813126}.View|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

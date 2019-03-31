@@ -1,0 +1,454 @@
+﻿/*In order of appearance*/            
+body 
+{
+    margin: 0;    
+    font-size: 100%;
+    overflow-x: hidden;    
+    font-family: 'Open Sans', sans-serif;
+}
+
+i 
+{
+    color: White;    
+}
+     
+header, footer 
+{
+    text-align: center;
+    margin: 0; 
+    background: #f0f0f0;  
+    border-bottom: 1px solid #c4dff5;                               
+}
+
+header h1, figure 
+{
+    background: #2780e3 !important;
+    color: white;
+    margin: 0;
+    padding: 10px;      
+    display: block;     
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 200%; 
+}
+
+h1 figure img 
+{
+    display: inline-block;    
+}
+
+
+header img 
+{        
+    width: 120px;                  
+} 
+                
+nav 
+{
+    margin: 0px;
+    padding: 0px;            
+    /*background: #c4dff5;*/
+    background: white;  
+    display: block-inline;                 
+}
+
+nav a
+{
+    display: inline-block;
+    padding: 0.5em 1em;                                
+    color: black;
+    background: transparent;                
+    text-decoration: none;    
+}
+
+nav input 
+{
+    display: none;
+}
+
+nav ul 
+{
+    list-style-type: none;
+    overflow: hidden;    
+    margin: 0;
+}
+    
+nav ul li 
+{
+    float: left;    
+}
+
+nav ul li a, nav ul li label 
+{
+    display: block;    
+}
+
+nav div 
+{
+    display: inline-block;       
+}
+
+nav div a 
+{
+    background: transparent;
+} 
+
+nav a:hover  
+{
+    text-decoration: underline;    
+    cursor: pointer;                    
+}
+
+nav label:hover i 
+{    
+    color: White;
+    cursor: pointer;
+}
+
+nav a:visited, nav a:active, nav label:active, nav div a:active, nav div a:hover 
+{                
+    color: #77bdf7;
+}
+
+#menu li:nth-of-type(21) 
+{
+    font-size: large;
+    line-height: 20px;
+}
+
+#menu li:nth-of-type(22) 
+{
+    font-size: medium;
+    line-height: 24px;
+}
+
+#menu li:nth-of-type(23) 
+{
+    font-size: small;
+    line-height: 29px;
+}
+
+mobile i 
+{
+    display: none;  
+    padding: 0px 10px;  
+}
+
+notifications 
+{
+    padding: 1em 1em 1em 5em;
+    background: ivory;   
+    display: block; 
+    text-align: left;
+}
+
+notifications b i 
+{
+    color: Black;    
+}
+
+notifications button 
+{
+    margin: 50px 20px 0px 0px;     
+}
+
+.green 
+{
+    background: forestGreen !important;       
+}
+
+button.green 
+{
+    box-shadow: 2px 2px #377a00;    
+}
+
+.red 
+{
+    background: #d90024 !important;
+}
+
+main 
+{
+    padding: 50px;
+    background: #fcfcfc;
+}
+
+main aside 
+{
+    background: ivory;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+form 
+{
+    margin-right: 30px;
+}
+
+form input, form textarea, form select
+{
+    width: 100% !important;  
+    margin: 10px 0px 10px 0px;    
+    background: transparent;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 10px 2px;
+    
+}
+
+form input[type="submit"] 
+{
+    width: 150px !important;    
+    color: white !important;
+    background-color: #2780e3;
+    border: 0;
+    padding: 0.5em;
+    cursor: pointer;
+    border-radius: 3px !important;
+    box-shadow: 2px 2px #1f6abf;    
+}
+
+form fieldset 
+{
+    padding: 30px;    
+}
+
+form input[type="file"], form input[type="color"] 
+{
+    padding: 0;    
+}
+
+label 
+{
+    font-weight: bold;       
+}
+
+label i, label i:hover 
+{
+    color: Black !important;    
+}
+
+main figure 
+{
+    max-width: 330px;                  
+}
+
+main aside figure 
+{
+    max-width: 330px;
+}
+
+section 
+{
+    padding: 10px;
+    overflow: hidden;
+    display: inline-grid;
+    flex-direction: column;
+    grid-template-columns: auto auto auto auto;
+}  
+                         
+section div 
+{
+    
+    margin: 15px; 
+    padding: 0px; 
+    background: #fff !important;                                        
+    box-shadow: 3px 3px #ddd;    
+    display: none;
+    cursor: pointer;
+    word-wrap: break-all;
+    
+}
+
+
+section div input[type="checkbox"] 
+{
+    display: none;    
+}
+
+section div article p   
+{
+    padding: 15px;    
+}
+
+section div article ul 
+{
+    padding: 30px;    
+}
+
+article h2 
+{
+    background: #2780e3;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    margin: 0px;    
+} 
+
+article h2 code 
+{
+    color: #fff;    
+}
+
+button
+{
+    display: inline-block;
+    margin: 15px 0px 50px 15px;
+    padding: 0.7em;    
+    background: #fafafa;        
+    color: #ddd;
+    cursor: pointer;     
+    border: none;
+    border-radius: 3px;
+    box-shadow: 2px 2px #ddd;
+} 
+
+.ui-button .ui-corner-all .ui-widget .ui-button-icon-only .ui-dialog-titlebar-close 
+{
+    background: #fafafa !important;    
+}
+
+button:hover
+{
+    /*background: #c4dff5;
+    border: 1px solid #c4dff5;
+    color: white;     */
+}
+
+button:hover > i 
+{
+    /*color: #fff !important;*/    
+}
+          
+code 
+{
+    color: #2780e3;                    
+}
+
+.progress 
+{
+    margin: -13px 0px -5px 0px;
+    padding: 0;
+}
+
+.progress progress 
+{  
+    padding: 0;
+    margin: 0;
+    background: #6dcf1d;  
+    animation: fill 1s; 
+    height: 5px; 
+    border: 0;
+}
+
+.modal
+{
+    display: none;     
+    font-family: 'Open Sans', sans-serif;    
+    word-wrap: break-all;   
+    width: 100% !important;
+    margin: 0px !important;
+    padding: 0;
+    position: absolute; 
+    top: 0;
+    left: 0;     
+}
+
+.ui-widget-content {
+  height: auto;
+  min-height: 100%;
+  border-radius: 0;  
+}
+
+.modal input, .modal select 
+{
+    border-radius: 0px !important;   
+
+}
+
+.modal input[type="button"] 
+{    
+    border: none;        
+    background: #2780e3;
+    color: White !important;
+    padding: 0.5em !important;
+    border-radius: 3px;
+    box-shadow: 2px 2px #ddd;    
+}
+
+
+.accordion
+{
+    width: 96%;        
+}
+
+.accordion h3, .accordion div
+{
+    border-radius: 0px;    
+}
+
+
+#bing 
+{
+    position: relative;
+    width: 100%;
+    height: 400px; 
+    background: inherit;   
+    overflow: hidden;
+}
+
+#HTML_placeholder 
+{
+    border: 1px solid #ddd;  
+    margin: 0px 30px 0px 0px;
+}
+
+#placeholder_section 
+{       
+    display: inline-grid;
+    flex-direction: column;
+    grid-template-columns: auto auto auto auto;        
+}
+
+#placeholder_section div 
+{
+    overflow: hidden;
+}
+
+button.disabled 
+{
+    box-shadow: 2px 2px #787878;    
+}
+
+.disabled, .disabled i 
+{
+    border: 0 !important; 
+    background: gray !important; 
+    color: #ddd;        
+}
+
+.disabled:hover
+{
+    background: gray; 
+    color: #ddd; 
+}
+
+
+
+footer 
+{
+    padding: 1em;
+} 
+
+
+@keyframes fill 
+{
+    from 
+    {
+        width: 0;
+    }    
+    to 
+    {
+       width: 100%; 
+    }
+}

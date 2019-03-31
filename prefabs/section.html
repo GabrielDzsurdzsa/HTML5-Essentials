@@ -1,0 +1,32 @@
+﻿<title>
+    HTML5 Essentials - section
+</title>
+<style type="text/css">
+    
+    .section 
+    {           
+        border: 1px solid #ddd;    
+        box-shadow: none !important;         
+        font-family: Open-Sans, Arial, Helvetica;
+        overflow: hidden;        
+        padding: 6em !important;                  
+    }
+    
+    .section span 
+    {
+        cursor: pointer; 
+        float: right;  
+    }      
+    
+</style>
+<div class="section">
+    <span>
+        <a onclick="this.parentNode.parentNode.style.display = 'none'">
+            X
+        </a>
+    </span>
+    <section>
+        <h2>section_headline</h2>
+        <p>section_text</p>
+    </section>
+</div>

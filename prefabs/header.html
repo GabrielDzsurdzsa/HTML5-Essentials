@@ -1,0 +1,60 @@
+﻿<title>
+    HTML5 Essentials - header
+</title>
+<style type="text/css">
+    
+    .header 
+    {   
+        background: #f0f0f0; 
+        border-bottom: 1px solid #c4dff5;            
+        margin: 0; 
+        text-align: center; 
+        width: 100% !important; 
+        font-family: Open Sans, Arial, sans-serif; 
+    }
+    
+    .header h1 
+    {
+        background: #2780e3 !important; 
+        color: white; 
+        display: block;         
+        font-size: 200%;      
+        margin: 0; 
+        padding: 10px; 
+        font-family: 'Montserrat Subrayada', sans-serif;    
+    }
+    
+    .header figure img 
+    {
+        display: inline-block; 
+        width: 120px;    
+    }
+    
+    mobile button 
+    {
+        padding: 1em; 
+        margin: 10px;
+        background: transparent;           
+    }  
+    
+</style>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        /*Toggle mobile menu*/
+        $("mobile button").click(function () { $(this.parentNode.parentNode.children[2]).fadeToggle(); });
+
+    })
+</script>
+<header class="header">    
+    <h1>
+        <figure>
+            <img src="web_logo_src" alt="web_logo_src"/> web_title
+        </figure> 
+    </h1>       
+    <mobile>
+        <button id="mobile">
+            <i class="fas fa-bars"></i>
+        </button>
+    </mobile>     
+</header>
